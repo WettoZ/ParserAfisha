@@ -4,5 +4,4 @@ requests
 firebase_admin
 datetime
 lxml
-apscheduler
-
+APScheduler==3.0.0
