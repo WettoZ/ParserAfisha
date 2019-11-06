@@ -1,0 +1,7 @@
+bs4 
+urllib.request
+requests
+firebase_admin
+datetime
+lxml
+
