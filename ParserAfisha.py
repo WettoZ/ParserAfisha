@@ -153,6 +153,6 @@ def scheduled_job():
 
 
 sched = BlockingScheduler()
-sched.scheduled_job('cron', day_of_week='mon-fri', hour=7)
+@sched.scheduled_job('cron', day_of_week='mon-fri', hour=7)
 sched.start()
 
