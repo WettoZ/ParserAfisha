@@ -8,8 +8,10 @@ from datetime import datetime, timedelta
 from lxml import html
 from apscheduler.schedulers.blocking import BlockingScheduler
 import time
+import os
 
-cred = credentials.Certificate("./myloc-1571525204357-firebase-adminsdk-x55mt-fcf4afe1b3.json")
+token = os.environ('API_KEY')
+cred = credentials.Certificate(token)
 firebase_admin.initialize_app(cred, {'databaseURL':'https://myloc-1571525204357.firebaseio.com/'})
 
 cookies = { 'afisha.sid':'s%3AqVKZb4OPJbvtQoIV9ccvZ0UnRO9i8ZTg.Es7iWs0rP2cIgTA3HtNVH8Lkwgau80w%2BDBK6QsaCZ7U',
