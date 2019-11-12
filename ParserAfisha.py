@@ -10,7 +10,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 import time
 import os
 
-token = os.environ('API_KEY')
+token = os.environ.get('API_KEY')
 cred = credentials.Certificate(token)
 firebase_admin.initialize_app(cred, {'databaseURL':'https://myloc-1571525204357.firebaseio.com/'})
 
