@@ -150,11 +150,11 @@ def main():
             break 
            
 
-def scheduled_job():
-  main()
+#def scheduled_job():
+main()
 
 
-sched = BlockingScheduler()
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=7)
-sched.start()
+#sched = BlockingScheduler()
+#@sched.scheduled_job('cron', day_of_week='mon-fri', hour=7)
+#sched.start()
 
