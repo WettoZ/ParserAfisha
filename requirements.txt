@@ -4,3 +4,4 @@ firebase_admin
 datetime
 lxml
 APScheduler==3.0.0
+boto
