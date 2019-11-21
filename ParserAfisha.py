@@ -155,8 +155,8 @@ def main():
 def scheduled_job():
   main()
 
-
-sched = BlockingScheduler()
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=7)
-sched.start()
+if __name__= __main__:
+  sched = BlockingScheduler()
+  @sched.scheduled_job('cron', day_of_week='mon-fri', hour=7)
+  sched.start()
 
